@@ -1,0 +1,13 @@
+{
+  "name": "tongi-rental-marketplace",
+  "private": true,
+  "description": "টঙ্গী বাসা ভাড়া — Property rental marketplace for Tongi City",
+  "scripts": {
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "seed": "npm run seed --prefix backend",
+    "start": "concurrently -n api,web -c cyan,magenta \"npm start --prefix backend\" \"npm start --prefix frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
